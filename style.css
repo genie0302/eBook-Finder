@@ -1,0 +1,106 @@
+/*
+#191D88, #1450A3, #337CCF, #FFC436
+*/
+
+header {
+  display: grid;
+  place-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 a {
+  font-size: 50px;
+  color: #191d88;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+input {
+  width: 75%;
+  height: 50px;
+  padding-left: 20px;
+  font-size: 20px;
+  border-color: #1450a3;
+  border-radius: 40px;
+}
+
+button {
+  border: 0;
+}
+
+form button {
+  background-color: transparent;
+}
+
+i {
+  color: #1450a3;
+}
+
+main {
+  margin: 0 auto;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#book-info {
+  display: grid;
+  place-items: center;
+  padding-right: 50px;
+}
+
+img {
+  width: 180px;
+  height: 280px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 50px;
+}
+
+.library-link {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 70px;
+}
+.library {
+  padding: 5px 0px;
+  margin-right: 10px;
+}
+/*보유, 미보유 버튼*/
+.have-info {
+  width: 60px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+}
+.yellow {
+  background-color: #ffc436;
+}
+.blue {
+  background-color: #337ccf;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #book-info {
+    padding-right: 0;
+  }
+  ul {
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eBook Finder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="index.html">eBook Finder</a></h1>
+      <form action="">
+        <input type="text" placeholder="책 제목을 입력하세요." />
+        <button><i class="fa-solid fa-magnifying-glass fa-2xl"></i></button>
+      </form>
+    </header>
+    <main>
+      <div id="book-info">
+        <img
+          src="https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791191824001.jpg"
+          alt=""
+        />
+        <h3>지구 끝의 온실</h3>
+        <span>저자: 김초엽</span>
+        <span>출판: 자이언트북스</span>
+        <span>발행: 2021.08.18</span>
+      </div>
+      <ul id="library-list">
+        <li>
+          <a
+            class="library-link"
+            target="_blank"
+            href="https://www.millie.co.kr/v3/bookDetail/179467118?nav_hidden=y"
+          >
+            <div class="library">밀리의 서재</div>
+            <div class="have-info yellow">보유</div>
+          </a>
+        </li>
+        <li>
+          <a
+            class="library-link"
+            target="_blank"
+            href="https://select.ridibooks.com/home"
+          >
+            <div class="library">리디 셀렉트</div>
+            <div class="have-info blue">미보유</div>
+          </a>
+        </li>
+        <!--
+          <div>
+          <span>리디 셀렉트</span>
+          <button class="btn2">미보유</button>
+        </div>
+        <div>
+          <span>원스토리</span>
+          <button class="btn1">보유</button>
+        </div>
+        <div>
+          <span>윌라</span>
+          <button class="btn2">미보유</button>
+        </div>
+        <div>
+          <span>크레마 클럽</span>
+          <button class="btn1">보유</button>
+        </div>
+        -->
+      </ul>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/6a1e7c4398.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
