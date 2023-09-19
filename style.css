@@ -3,12 +3,15 @@
 */
 
 header {
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 h1 a {
@@ -17,14 +20,13 @@ h1 a {
 }
 
 form {
-  width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
 }
 
 input {
-  width: 75%;
+  width: 500px;
   height: 50px;
   padding-left: 20px;
   font-size: 20px;
@@ -32,12 +34,26 @@ input {
   border-radius: 40px;
 }
 
-button {
-  border: 0;
+@media screen and (max-width: 600px) {
+  input {
+    width: 80vw;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #book-info {
+    padding-right: 0;
+  }
+  ul {
+    padding-left: 0;
+  }
 }
 
-form button {
+button {
   background-color: transparent;
+  border: none;
 }
 
 i {
@@ -45,15 +61,16 @@ i {
 }
 
 main {
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   padding-top: 50px;
   display: flex;
   justify-content: center;
 }
 
 #book-info {
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-right: 50px;
 }
 
@@ -69,13 +86,13 @@ ul {
 
 .library-link {
   margin-bottom: 20px;
-  display: grid;
-  grid-template-columns: 1fr 70px;
+  display: flex;
 }
 .library {
   padding: 5px 0px;
   margin-right: 10px;
 }
+
 /*보유, 미보유 버튼*/
 .have-info {
   width: 60px;
@@ -85,22 +102,9 @@ ul {
 }
 .yellow {
   background-color: #ffc436;
+  color: black;
 }
 .blue {
   background-color: #337ccf;
   color: white;
-}
-
-@media (max-width: 800px) {
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #book-info {
-    padding-right: 0;
-  }
-  ul {
-    padding-left: 0;
-  }
 }
